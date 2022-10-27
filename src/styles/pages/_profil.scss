@@ -1,0 +1,42 @@
+.profile-title {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+.selector-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    gap: 65px;
+    border-top: 1px solid lightgrey;
+
+    div {
+        padding: 8px 0;
+    }
+
+    .active {
+        border-top: 1px solid black;
+        filter: opacity(1);
+    }
+}
+
+.selector-title {
+    text-transform: uppercase;
+    font-family: $font;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.selection-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.faded {
+    filter: opacity(0.5);
+}

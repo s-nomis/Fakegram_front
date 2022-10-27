@@ -1,0 +1,49 @@
+.settings-container {
+    display: flex;
+    background-color: #FFFFFF;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.settings-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 400px;
+    border-left: 1px solid lightgrey;
+}
+
+.settings-menu-container {
+    flex-basis: 236px;
+    min-height: 790px;
+}
+
+.settings-menu-item {
+    font-size: 16px;
+    padding: 16px 16px 16px 30px;
+    color: #000000;
+    border-left: 2px solid transparent;
+
+    &.active {
+        font-weight: 500;
+        border-left: 2px solid black;
+    }
+
+    &.inactive:hover {
+        background-color: $bg-color;
+        border-left: 2px solid #DBDBDB;
+    }
+
+}
+.input-update-container {
+    flex-basis: 355px;
+}
+
+.aside {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+    flex: 0 0 194px;
+    margin-top: 5px;
+    padding: 0 32px;
+}

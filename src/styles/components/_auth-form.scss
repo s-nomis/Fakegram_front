@@ -1,0 +1,73 @@
+.fullscreen-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 20px;
+
+    max-width: 350px;
+    width: 100%;
+}
+
+.box-container {
+    width: 100%;
+    border: 1px solid lightgray;
+    background-color: #FFFFFF;
+    padding: 30px 0;
+}
+
+.auth-input-container {
+    position: relative;
+    display: flex;
+    margin-bottom: 8px;
+    background-color: $bg-color;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.input-component {
+    flex-grow: 1;
+}
+
+.label-register {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    color: gray;
+    user-select: none;
+    cursor: text;
+    font-size: 14px;
+    transform: translate(0, -50%);
+    transition: all .2s ease-out;
+}
+
+.logo-large {
+    font-family: $font-logo;
+    font-size: 3.5em;
+}
+
+.register-title {
+    font-size: 17px;
+    font-family: $font;
+    font-weight: 600;
+    color: #8E8E8E;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.error {
+    margin-top: 10px;
+    white-space: pre-wrap;
+    text-align: center;
+    color: red;
+    font-size: 14px;
+}

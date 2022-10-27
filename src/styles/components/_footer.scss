@@ -1,0 +1,18 @@
+.footer{
+    margin-top: auto;
+    min-height: 100px;
+}
+
+.footer-link {
+    color: rgba(142, 142, 142);
+    font-weight: 400;
+    font-size: 12px;
+
+    & a, a:hover {
+        color: rgba(142, 142, 142);
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

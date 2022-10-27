@@ -1,0 +1,55 @@
+.post {
+    background-color: #FFFFFF;
+    border: 1px solid lightgray;
+    
+    &.post-feed {
+        border-radius: 8px;
+    }
+
+    &.post-page {
+        border-radius: 3px;
+    }
+}
+
+.post-header {
+    padding: 0 16px;
+    height: 60px;
+}
+
+.post-owner {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.post-content {
+    img {
+        width: 100%;
+    }
+}
+
+.post-expanded {
+    flex-grow: 1;
+    justify-content: center;
+    min-height: 450px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.post-infos {
+    flex: 0 0 auto;
+    width: 335px;
+}
+
+.post-socials {
+    font-size: 14px;
+    padding: 10px 15px;
+}

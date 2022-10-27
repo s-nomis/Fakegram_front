@@ -1,0 +1,22 @@
+.emoji-keyboard {
+    position: absolute;
+    z-index: 2;
+
+    &.keyboard-up {
+        left: 0;
+        bottom: 45px;
+
+        em-emoji-picker {
+            max-height: 275px;
+        }
+    }
+
+    &.keyboard-down {
+        left: -10px;
+        top: 40px;
+
+        em-emoji-picker {
+            max-height: 230px;
+        }
+    }
+}

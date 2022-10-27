@@ -1,0 +1,54 @@
+.btn {
+    font-family: $font;
+    font-size: 14px;
+
+    &.btn-small {
+        padding: 5px 9px;
+        border-radius: 4px;
+    }
+    
+    &.btn-large {
+        padding: 14px 9px;
+    }
+    
+    &.btn-primary {
+        border: 1px solid transparent;
+        background-color: #0095F6;
+        color: #FFFFFF;
+    }
+
+    &.btn-secondary {
+        border: 1px solid lightgray;
+        background-color: #FAFAFA;
+        color: #000000;
+    }
+
+    &.btn-tertiary {
+        border: none;
+        background-color: #FFFFFF;
+        color: #0095F6;
+    }
+
+    &.btn-quaternary {
+        border: none;
+        background-color: #FAFAFA;
+    }
+
+    &.btn-dialog {
+        border: none;
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+
+    &.btn-danger {
+        color: #ED4956;
+    }
+
+    &.btn-success {
+        color: #0095F6;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

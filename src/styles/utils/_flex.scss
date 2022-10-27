@@ -1,0 +1,82 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.test {
+    background-color: red;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-justify-end {
+    justify-content: flex-end;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.g-5 {
+    gap: 5px;
+}
+
+.g-6 {
+    gap: 6px;
+}
+
+.g-8 {
+    gap: 8px;
+}
+
+.g-10 {
+    gap: 10px;
+}
+
+.g-12 {
+    gap: 12px;
+}
+
+.g-15 {
+    gap: 15px;
+}
+
+.g-16 {
+    gap: 16px;
+}
+
+.g-20 {
+    gap: 20px;
+}
+
+.g-25 {
+    gap: 25px;
+}
+
+.g-32 {
+    gap: 32px;
+}
+
+.g-40 {
+    gap: 40px;
+}
+
+.g-100 {
+    gap: 100px;
+}

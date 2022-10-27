@@ -1,0 +1,21 @@
+.avatar {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+
+    &.nav-avatar {
+        width: 24px;
+    }
+
+    &.post-avatar {
+        width: 35px;
+    }
+
+    &.search-avatar {
+        width: 44px;
+    }
+
+    &.profile-avatar {
+        width: 150px;
+    }
+}
