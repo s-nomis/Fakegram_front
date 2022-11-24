@@ -39,7 +39,7 @@ const AuthProfil = ({ user }) => {
 
                 <div className="flex-row g-40">
                     <div>
-                        <span className="fw-600">{user.photos.length}</span>{" "}
+                        <span className="fw-600">{user.posts.length}</span>{" "}
                         publications
                     </div>
                     <div>

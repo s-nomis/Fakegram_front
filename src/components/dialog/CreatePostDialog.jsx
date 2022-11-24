@@ -52,6 +52,8 @@ const CreatePostDialog = ({ displayPrevDialog, displayDialog, imgFile }) => {
         form.append("description", description);
         form.append("image", imgFile);
 
+        console.log(form);
+
         dispatch(addPost(form));
         displayDialog(false);
     };

@@ -10,7 +10,7 @@ const CommentOptions = ({ comment, displayDialog }) => {
 
     const handleDelete = () => {
         dispatch(
-            deleteComment({ postId: comment.photo, commentId: comment._id })
+            deleteComment({ postId: comment.post, commentId: comment._id })
         );
     };
 

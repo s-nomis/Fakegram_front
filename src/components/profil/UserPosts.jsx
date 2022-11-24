@@ -4,8 +4,8 @@ import Miniature from "../Miniature";
 const UserPosts = ({ user, setCurrentPost, displayPost }) => {
     return (
         <>
-            {user.photos ? (
-                user.photos.map((post) => (
+            {user.posts ? (
+                user.posts.map((post) => (
                     <Miniature
                         key={post._id}
                         post={post}

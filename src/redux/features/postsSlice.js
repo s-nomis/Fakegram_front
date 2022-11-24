@@ -30,7 +30,7 @@ export const addPost = createAsyncThunk(
     async (data, { rejectWithValue }) => {
         try {
             const response = await api.addPost(data);
-
+            console.log(response.data);
             return response.data;
         } catch (err) {
             return rejectWithValue(err.response.data.message);

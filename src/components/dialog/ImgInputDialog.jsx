@@ -11,6 +11,8 @@ const ImgInputDialog = ({ displayDialog, displayNextDialog, imgFile }) => {
             imgFile(file);
         }
 
+        console.log(file);
+
         displayNextDialog(true);
         displayDialog(false);
     };

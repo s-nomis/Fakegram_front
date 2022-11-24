@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL: "http://localhost:5000/api",
+    baseURL: "https://fakegram-api.onrender.com/api",
+    // baseURL: "http://localhost:5000/api",
 });
 
 API.interceptors.request.use((req) => {
@@ -41,23 +42,23 @@ export const updatePassword = (userId, data) =>
 /**
  * POSTS
  */
-export const getPost = (id) => API.get(`/photos/${id}`);
-export const getPosts = (page) => API.get(`/photos?page=${page}`);
-export const getMaxPosts = () => API.get(`/photos/count/max`);
+export const getPost = (id) => API.get(`/posts/${id}`);
+export const getPosts = (page) => API.get(`/posts?page=${page}`);
+export const getMaxPosts = () => API.get(`/posts/count/max`);
 export const addPost = (data) =>
-    API.post(`/photos`, data, {
+    API.post(`/posts`, data, {
         headers: { "Content-Type": "multipart/form-data" },
     });
-export const updatePost = (postId, data) => API.put(`/photos/${postId}`, data);
-export const likePost = (postId) => API.put(`/photos/likes/${postId}`);
-export const favPost = (postId) => API.put(`/photos/saved/${postId}`);
-export const deletePost = (postId) => API.delete(`/photos/${postId}`);
+export const updatePost = (postId, data) => API.put(`/posts/${postId}`, data);
+export const likePost = (postId) => API.put(`/posts/likes/${postId}`);
+export const favPost = (postId) => API.put(`/posts/saved/${postId}`);
+export const deletePost = (postId) => API.delete(`/posts/${postId}`);
 
 /**
  * COMMENTS
  */
 export const addComment = (postId, data) =>
-    API.post(`/photos/${postId}/comments`, data);
-export const getComments = (postId) => API.get(`/photos/${postId}/comments`);
+    API.post(`/posts/${postId}/comments`, data);
+export const getComments = (postId) => API.get(`/posts/${postId}/comments`);
 export const deleteComment = (postId, commentId) =>
-    API.delete(`/photos/${postId}/comments/${commentId}`);
+    API.delete(`/posts/${postId}/comments/${commentId}`);
