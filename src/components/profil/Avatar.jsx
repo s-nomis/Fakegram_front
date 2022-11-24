@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { updateAvatar } from "../../redux/features/authSlice";
 import EditAvatarDialog from "../dialog/EditAvatarDialog";
 
 const Avatar = ({ children, avatar }) => {
     const dispatch = useDispatch();
+
+    const { loading, user } = useSelector((state) => state.auth);
 
     const [displayDialog, setDisplayDialog] = useState(false);
 
@@ -18,7 +20,7 @@ const Avatar = ({ children, avatar }) => {
         const form = new FormData();
         form.append("avatar", e.target.files[0]);
 
-        dispatch(updateAvatar(form));
+        dispatch(updateAvatar({ userId: user._id, data: form }));
     };
 
     return (

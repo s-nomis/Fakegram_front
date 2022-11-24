@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { updateAvatar } from "../../redux/features/authSlice";
 import DialogComponent from "./DialogComponent";
 
 const EditAvatarDialog = ({ displayDialog }) => {
     const dispatch = useDispatch();
 
+    const { loading, user } = useSelector((state) => state.auth);
+
     const [showForm, setShowForm] = useState(false);
 
     const revertDefault = () => {
         const form = new FormData();
-        dispatch(updateAvatar(form));
+        dispatch(updateAvatar({ userId: user._id, data: form }));
     };
 
     const handleSubmit = (e) => {
@@ -19,7 +21,7 @@ const EditAvatarDialog = ({ displayDialog }) => {
         const form = new FormData();
         form.append("avatar", e.target.files[0]);
 
-        dispatch(updateAvatar(form));
+        dispatch(updateAvatar({ userId: user._id, data: form }));
         displayDialog(false);
     };
 

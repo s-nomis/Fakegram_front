@@ -84,12 +84,9 @@ export const updatePassword = createAsyncThunk(
 
 export const updateAvatar = createAsyncThunk(
     "user/updateAvatar",
-    async (data, { rejectWithValue }) => {
+    async ({ userId, data }, { rejectWithValue }) => {
         try {
-            const response = await api.updateAvatar(
-                "625e8f170e3637df22f2dd53",
-                data
-            );
+            const response = await api.updateAvatar(userId, data);
 
             return response.data;
         } catch (err) {
